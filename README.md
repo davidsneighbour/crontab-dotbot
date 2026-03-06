@@ -10,7 +10,7 @@ Plugin for [`dotbot`](https://github.com/anishathalye/dotbot) to edit and sync c
 git submodule add https://github.com/fundor333/crontab-dotbot.git
 ```
 
-1. Modify your `install` script to enable the `crontab-dotbot` plugin.
+2. Modify your `install` script to enable the `crontab-dotbot` plugin.
 
 ```bash
 "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" --plugin-dir crontab-dotbot -c "${CONFIG}" "${@}"
@@ -18,7 +18,7 @@ git submodule add https://github.com/fundor333/crontab-dotbot.git
 
 ## Usage
 
-The plugin adds one directive use with `crontab` with two keyword:
+The plugin adds one directive use with `crontab` with three keywords:
 
 * `cron`: The crontab regex
 * `command`: The command to run
